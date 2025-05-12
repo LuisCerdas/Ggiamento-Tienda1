@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- Elemento raíz del documento, especifica que el idioma es español -->
+
+<head>
+  <!-- Cabecera del documento - contiene metadatos y enlaces a recursos -->
+  <meta charset="UTF-8">
+  <!-- Especifica la codificación de caracteres como UTF-8 (soporta caracteres internacionales) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura la vista para dispositivos móviles (ancho igual al dispositivo, escala inicial 1.0) -->
+  <title>Ggiamento | Tienda de Moda Online</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+  
+  <!-- Enlaces a recursos externos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Carga Tailwind CSS desde CDN (framework de utilidades CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Carga Font Awesome para iconos -->
+
+  <!-- Enlace al archivo JavaScript con atributo defer (se ejecuta después de cargar el HTML) -->
+  
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Precarga y carga la fuente Inter de Google Fonts -->
+</head>
+
+<body class="min-h-screen">
+<!-- Cuerpo del documento con clase de Tailwind para altura mínima de pantalla -->
+
+  <!-- Header con logo -->
+  <header class="py-4 border-b">
+  <!-- Encabezado con padding vertical (py-4) y borde inferior -->
+    <div class="container mx-auto px-4">
+    <!-- Contenedor con margen automático y padding horizontal -->
+      <!-- Logo centrado -->
+      <div class="flex justify-center mb-4">
+      <!-- Contenedor flex que centra su contenido -->
+        <h1 class="text-4xl font-bold tracking-wider">Ggiamento</h1>
+        <!-- Título principal con tamaño grande, negrita y espaciado entre letras -->
+      </div>
+
+      <!-- Navegación -->
+      <nav class="flex justify-between items-center">
+      <!-- Barra de navegación con espacio entre elementos y alineación vertical -->
+        <!-- Div vacío para espaciado del lado izquierdo -->
+        <div class="w-1/3"></div>
+        <!-- Ocupa 1/3 del ancho para balancear el diseño -->
+
+        <!-- Categorías centradas -->
+        <ul class="flex space-x-8">
+        <!-- Lista de enlaces con espacio horizontal entre ellos -->
+          <li>
+            <a href="hombre.html" class="text-gray-700 hover:text-primary transition-colors">Hombre</a>
+            <!-- Enlace con color gris, efecto hover y transición suave -->
+          </li>
+          <li class="hover:text-black transition-colors">
+            <a href="mujer.html">Mujer</a>
+          </li>
+          <li class="hover:text-black transition-colors">
+            <a href="accesorios.html">Accesorios</a>
+          </li>
+          <li class="hover:text-black transition-colors">
+            <a href="nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+
+        <!-- Acciones de usuario a la derecha -->
+        <div class="flex justify-end items-center space-x-4 w-1/3">
+        <!-- Contenedor para elementos de usuario (login, carrito) -->
+          <a href="login.html" class="flex items-center space-x-1 hover:text-black transition-colors">
+            <i class="fas fa-user"></i>
+            <!-- Icono de Font Awesome -->
+            <span>Iniciar sesión</span>
+          </a>
+          <a href="carrito.html" class="flex items-center space-x-1 hover:text-black transition-colors">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="sr-only">Carrito</span>
+            <!-- Texto oculto solo para lectores de pantalla (accesibilidad) -->
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero (carrusel) -->
+  <section class="py-10 relative w-auto h-auto overflow-hidden" id="carousel">
+  <!-- Sección relativa con padding vertical y overflow oculto -->
+    <!-- Slides del carrusel -->
+    <div class="flex transition-transform duration-500 ease-in-out" id="carouselSlides">
+    <!-- Contenedor flex para slides con transición suave -->
+      <!-- Slide 1 -->
+      <div class="w-full flex-shrink-0 relative">
+      <!-- Slide ocupa todo el ancho y no se reduce -->
+        <img src="/img/Screenshot 2025-05-08 001656.jpg" class="w-full h-[600px] md:h-[800px] object-cover">
+        <!-- Imagen con altura responsiva -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 text-white p-4">
+        <!-- Superposición semitransparente con contenido centrado -->
+          <h2 class="text-4xl font-bold mb-4">Nueva Colección</h2>
+          <p class="text-xl mb-6 max-w-md text-center">Descubre las últimas tendencias en moda para esta temporada.</p>
+          <a href="coleccion.html" class="bg-white text-black px-6 py-2 rounded hover:bg-gray-100">Ver colección</a>
+          <!-- Botón con efecto hover -->
+        </div>
+      </div>
+      
+      <!-- Slide 2 (similar al primero) -->
+      <div class="w-full flex-shrink-0 relative">
+        <img src="https://placehold.co/1200x500/f472b6/FFF?text=Slide+2" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 text-white p-4">
+          <h2 class="text-4xl font-bold mb-4">Colección Urbana</h2>
+          <p class="text-xl mb-6 max-w-md text-center">Estilo moderno para tu día a día.</p>
+          <a href="coleccion.html" class="bg-white text-black px-6 py-2 rounded hover:bg-gray-100">Ver colección</a>
+        </div>
+      </div>
+      
+      <!-- Slide 3 (similar a los anteriores) -->
+      <div class="w-full flex-shrink-0 relative">
+        <img src="https://placehold.co/1200x500/3b82f6/FFF?text=Slide+3" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 text-white p-4">
+          <h2 class="text-4xl font-bold mb-4">Colección Elegante</h2>
+          <p class="text-xl mb-6 max-w-md text-center">Diseños exclusivos para ocasiones especiales.</p>
+          <a href="coleccion.html" class="bg-white text-black px-6 py-2 rounded hover:bg-gray-100">Ver colección</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de navegación del carrusel -->
+    <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">‹</button>
+    <!-- Botón anterior posicionado absolutamente, centrado verticalmente -->
+    <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">›</button>
+    <!-- Botón siguiente con estilos similares -->
+  </section>
+
+  <!-- Sección de categorías destacadas -->
+  <section class="py-12 bg-gray-50">
+  <!-- Sección con padding vertical y fondo gris claro -->
+    <div class="container mx-auto px-4">
+    <!-- Contenedor con márgenes automáticos -->
+      <h2 class="text-3xl font-bold text-center mb-8">Categorías destacadas</h2>
+      <!-- Título centrado -->
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Grid responsivo (1 columna en móvil, 3 en desktop) -->
+      
+        <!-- Categoría Hombre -->
+        <div class="relative h-80 group overflow-hidden rounded-lg">
+        <!-- Contenedor relativo con altura fija y overflow oculto -->
+          <img 
+            src="/img/Screenshot 2025-05-08 132234.jpg" 
+            alt="Moda hombre" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            <!-- Imagen que cubre todo el espacio con efecto hover de zoom -->
+          >
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all">
+          <!-- Superposición con transición de opacidad al hacer hover -->
+            <a href="hombre.html" class="bg-white text-black px-6 py-2 rounded font-medium">
+              Hombre
+            </a>
+            <!-- Enlace con estilos -->
+          </div>
+        </div>
+
+        <!-- Categoría Mujer (similar a Hombre) -->
+        <div class="relative h-80 group overflow-hidden rounded-lg">
+          <img 
+            src="/img/Screenshot 2025-05-08 132305.jpg" 
+            alt="Moda mujer" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all">
+            <a href="mujer.html" class="bg-white text-black px-6 py-2 rounded font-medium">
+              Mujer
+            </a>
+          </div>
+        </div>
+
+        <!-- Categoría Accesorios (similar a las anteriores) -->
+        <div class="relative h-80 group overflow-hidden rounded-lg">
+          <img 
+            src="/img/Screenshot 2025-05-08 001525.jpg" 
+            alt="Accesorios" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all">
+            <a href="accesorios.html" class="bg-white text-black px-6 py-2 rounded font-medium">
+              Accesorios
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección "About Us" -->
+  <section id="about" class="py-24 translate-4 transition-all duration-500">
+  <!-- Sección con padding vertical grande -->
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 gap-16 items-center">
+      <!-- Grid de 2 columnas con espacio entre ellas y alineación vertical -->
+        <div>
+          <!-- Columna de texto -->
+          <h2 class="text-4xl font-bold mb-6">About Us</h2>
+          <p class="text-xl text-gray-600 dark:text-gray-400 mb-6">
+            I'm a frontend developer focused on crafting clean & user-friendly experiences.
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            I build responsive websites that are fast, easy to use,
+            and follow best coding practices.
+            My experience include HTML, CSS, JavaScript, and modern
+            frameworks to create dynamic, engaging
+            interfaces with clean, optimized code.
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 mb-8">
+            When I'm not coding, you can find me exploring new
+            technologies, contributing to open-source
+            projects, or enjoying a good book.
+          </p>
+          <!-- Botones -->
+          <div class="flex flex-row gap-4">
+            <a href="#contact" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-black transition duration-300 text-center">
+              Contactarme
+            </a>
+            <a href="/resume.pdf" download class="px-6 py-3 border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100 transition duration-300 text-center">
+              Descargar CV
+            </a>
+          </div>
+        </div>
+        
+        <!-- Columna de imagen -->
+        <div class="relative">
+          <div class="w-72 h-72 mx-auto animate-morph bg-gradient-to-br from-primary via-secondary to-accent rounded-full relative overflow-hidden">
+          <!-- Contenedor circular con gradiente y animación -->
+            <img src="/img/image.png" alt="Profile Photo" class="absolute inset-0 w-full h-full object-cover z-10">
+            <!-- Imagen superpuesta -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+  <!-- Pie de página con fondo oscuro y texto blanco -->
+    <div class="container mx-auto px-4">
+      <div class="flex flex-row justify-between items-center mb-8">
+      <!-- Contenedor flexible con espacio entre elementos -->
+      
+        <!-- Logo y descripción -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-2xl font-bold mb-4">Ggiamento</h3>
+          <p class="max-w-xs">Tu tienda de moda online con las últimas tendencias.</p>
+        </div>
+
+        <!-- Columnas de enlaces -->
+        <div class="flex-col grid grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Grid responsivo para enlaces -->
+        
+          <!-- Columna Categorías -->
+          <div>
+            <h4 class="font-bold mb-4">Categorías</h4>
+            <ul class="space-y-1">
+              <li><a href="hombre.html" class="hover:underline">Hombre</a></li>
+              <li><a href="mujer.html" class="hover:underline">Mujer</a></li>
+              <li><a href="accesorios.html" class="hover:underline">Accesorios</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna Información -->
+          <div>
+            <h4 class="font-bold mb-4">Información</h4>
+            <ul class="space-y-2">
+              <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
+              <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+              <li><a href="envios.html" class="hover:underline">Envíos</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna Mi cuenta -->
+          <div>
+            <h4 class="font-bold mb-4">Mi cuenta</h4>
+            <ul class="space-y-2">
+              <li><a href="login.html" class="hover:underline">Iniciar sesión</a></li>
+              <li><a href="registro.html" class="hover:underline">Registrarse</a></li>
+              <li><a href="pedidos.html" class="hover:underline">Mis pedidos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Derechos de autor -->
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2023 Ggiamento. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script al final del body para mejor rendimiento -->
+  <script src="script.js"></script>
+</body>
+</html>
